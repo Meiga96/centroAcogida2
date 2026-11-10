@@ -10,8 +10,9 @@ kotlin = "2.1.0"
 composeBom = "2024.12.01"
 navigationCompose = "2.8.5"
 # TODO Paso 9.1: añadir las versiones room y ksp
-room = "2.8.4"
-ksp = "2.3.4"
+annotation = "1.9.1"
+room = "2.6.1"
+ksp = "2.1.0-1.0.29"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,11 +33,13 @@ androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-te
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
 # TODO Paso 9.1: añadir androidx-room-runtime, androidx-room-ktx y androidx-room-compiler
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 # TODO Paso 9.1: añadir el plugin ksp
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

@@ -8,7 +8,7 @@ data class Animal(
     val nombre: String,
     val especie: String,
     val edad: Int,
-    @DrawableRes val imagen: Int,
+    @param:DrawableRes val imagen: Int,
     val urgente: Boolean,
     val descripcion: String = ""
 )
